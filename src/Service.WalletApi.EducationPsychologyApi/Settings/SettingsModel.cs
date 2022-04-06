@@ -5,31 +5,31 @@ namespace Service.WalletApi.EducationPsychologyApi.Settings
 {
     public class SettingsModel
     {
-        [YamlProperty("EducationPsychologyApi.SeqServiceUrl")]
+        [YamlProperty("WalletApiEducation.SeqServiceUrl")]
         public string SeqServiceUrl { get; set; }
 
-        [YamlProperty("EducationPsychologyApi.ZipkinUrl")]
+        [YamlProperty("WalletApiEducation.ZipkinUrl")]
         public string ZipkinUrl { get; set; }
 
-        [YamlProperty("EducationPsychologyApi.ElkLogs")]
+        [YamlProperty("WalletApiEducation.ElkLogs")]
         public LogElkSettings ElkLogs { get; set; }
 
-        [YamlProperty("EducationPsychologyApi.EnableApiTrace")]
+        [YamlProperty("WalletApiEducation.EnableApiTrace")]
         public bool EnableApiTrace { get; set; }
 
-        [YamlProperty("EducationPsychologyApi.MyNoSqlReaderHostPort")]
+        [YamlProperty("WalletApiEducation.MyNoSqlReaderHostPort")]
         public string MyNoSqlReaderHostPort { get; set; }
 
-        [YamlProperty("EducationPsychologyApi.AuthMyNoSqlReaderHostPort")]
+        [YamlProperty("WalletApiEducation.AuthMyNoSqlReaderHostPort")]
         public string AuthMyNoSqlReaderHostPort { get; set; }
 
-        [YamlProperty("EducationPsychologyApi.SessionEncryptionKeyId")]
+        [YamlProperty("WalletApiEducation.SessionEncryptionKeyId")]
         public string SessionEncryptionKeyId { get; set; }
 
-        [YamlProperty("EducationPsychologyApi.MyNoSqlWriterUrl")]
+        [YamlProperty("WalletApiEducation.MyNoSqlWriterUrl")]
         public string MyNoSqlWriterUrl { get; set; }
 
-		[YamlProperty("EducationPsychologyApi.EducationFlowServiceUrl")]
-		public string EducationFlowServiceUrl { get; set; }
+		[YamlProperty("WalletApiEducation.EducationPsychologyServiceUrl")]
+		public string EducationPsychologyServiceUrl { get; set; }
     }
 }
