@@ -2,7 +2,6 @@
 using Microsoft.Extensions.Logging;
 using MyJetWallet.ApiSecurityManager.Autofac;
 using MyJetWallet.Sdk.RestApiTrace;
-using MyJetWallet.Sdk.Service;
 using Service.Core.Client.Services;
 using Service.TutorialPsychology.Client;
 
@@ -12,8 +11,7 @@ namespace Service.WalletApi.EducationPsychologyApi.Modules
 	{
 		protected override void Load(ContainerBuilder builder)
 		{
-			// second parameter is null because we do not store api keys yet for wallet api
-			builder.RegisterEncryptionServiceClient(ApplicationEnvironment.AppName, () => Program.Settings.MyNoSqlWriterUrl);
+			builder.RegisterEncryptionServiceClient();
 
 			builder.RegisterTutorialPsychologyClient(Program.Settings.EducationPsychologyServiceUrl, Program.LoggerFactory.CreateLogger(typeof (TutorialPsychologyClientFactory)));
 
